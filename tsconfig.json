@@ -22,6 +22,7 @@
       "noErrorTruncation": true,
       "noImplicitOverride": true,
       "noImplicitThis": true,
+      "noUncheckedIndexedAccess": true,
       "noUnusedLocals": false,
       "noUnusedParameters": false,
       "outDir": "dist",
