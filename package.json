@@ -7,7 +7,7 @@
     "url": "https://github.com/michijs/shared-configs.git"
   },
   "type": "module",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "exports": {
     "./biome": "./biome.json",
     "./wrangler.json": "./wrangler.json",
