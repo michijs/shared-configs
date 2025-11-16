@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/michijs/tsconfig.git"
+    "url": "https://github.com/michijs/shared-configs.git"
   },
   "type": "module",
   "version": "0.0.12",
