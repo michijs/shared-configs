@@ -10,7 +10,7 @@
     "indentWidth": 2
   },
    "json": {
-    "parser": {
+    "linter": {
       "enabled": false
     }
   },
