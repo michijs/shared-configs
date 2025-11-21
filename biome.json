@@ -33,6 +33,7 @@
         "noEmptyInterface": "off",
         "noAssignInExpressions": "off",
         "noExplicitAny": "off",
+        "useStrictMode": "off",
         "noDoubleEquals": "off"
       },
       "style": {
