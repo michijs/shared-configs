@@ -30,6 +30,7 @@
         "useSimplifiedLogicExpression": "off"
       },
       "suspicious": {
+        "noTsIgnore": "off",
         "noEmptyInterface": "off",
         "noAssignInExpressions": "off",
         "noExplicitAny": "off",
