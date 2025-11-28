@@ -21,6 +21,8 @@
     "rules": {
       "recommended": true,
       "a11y": {
+        "useMediaCaption": "warn",
+        "noSvgWithoutTitle": "warn",
         "useValidAnchor": "off",
         "useButtonType": "off"
       },
@@ -57,7 +59,7 @@
         "noUnreachableSuper": "off",
         "noUnusedImports": {
           "level": "error",
-          "fix": "unsafe"
+          "fix": "safe"
         }
       },
       "performance": {
