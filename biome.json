@@ -3,6 +3,7 @@
   "files": {
     "includes": [
       "**",
+      "!**/bin",
       "!**/dist",
       "!**/build",
       "!**/generated",
