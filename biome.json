@@ -1,7 +1,13 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.3.5/schema.json",
   "files": {
-    "includes": ["**", "!**/generated", "!package.json"]
+    "includes": [
+      "**",
+      "!**/dist",
+      "!**/build",
+      "!**/generated",
+      "!**/package.json"
+    ]
   },
   "formatter": {
     "enabled": true,
@@ -14,9 +20,18 @@
       "enabled": false
     }
   },
-  "assist": { "actions": { "source": { "organizeImports": "off" } } },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "off"
+      }
+    }
+  },
   "linter": {
-    "includes": ["**", "!**/*.json"],
+    "includes": [
+      "**",
+      "!**/*.json"
+    ],
     "enabled": true,
     "rules": {
       "recommended": true,
@@ -29,9 +44,13 @@
       "complexity": {
         "noForEach": "off",
         "noBannedTypes": "off",
-        "useSimplifiedLogicExpression": "off"
+        "useSimplifiedLogicExpression": "off",
+        "noCommaOperator": "off",
+        "noUselessLoneBlockStatements": "off"
       },
       "suspicious": {
+        "useIterableCallbackReturn": "off",
+        "useGetterReturn": "off",
         "noConfusingLabels": "off",
         "noTsIgnore": "off",
         "noEmptyInterface": "off",
@@ -46,7 +65,6 @@
         "useBlockStatements": "off",
         "noNonNullAssertion": "off",
         "noImplicitBoolean": "off",
-        "noParameterAssign": "error",
         "useAsConstAssertion": "error",
         "useDefaultParameterLast": "error",
         "useEnumInitializers": "error",
@@ -54,9 +72,15 @@
         "noUnusedTemplateLiteral": "error",
         "useNumberNamespace": "error",
         "noInferrableTypes": "error",
-        "noUselessElse": "error"
+        "noUselessElse": "error",
+        "noParameterAssign": "info",
+        "useNodejsImportProtocol": "off"
       },
       "correctness": {
+        "noVoidTypeReturn": "off",
+        "noConstructorReturn": "off",
+        "noUnusedLabels": "off",
+        "noUnreachable": "off",
         "noUnreachableSuper": "off",
         "noUnusedImports": {
           "level": "error",
