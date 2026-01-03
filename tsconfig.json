@@ -2,6 +2,7 @@
   "$schema": "https://www.schemastore.org/tsconfig.json",
   "compilerOptions": {
     "allowJs": true,
+    "libReplacement": false,
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
