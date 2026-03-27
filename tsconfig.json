@@ -25,6 +25,7 @@
     "outDir": "dist",
     "resolveJsonModule": true,
     "skipLibCheck": true,
+    "strict": false,
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
     "strictNullChecks": true,
