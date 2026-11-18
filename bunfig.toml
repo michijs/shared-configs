@@ -1,0 +1,41 @@
+# Same file formatting rules as @michijs/shared-configs/biome
+[fmt]
+printWidth = 80
+tabWidth = 2
+useTabs = false
+endOfLine = "lf"
+semi = true
+singleQuote = false
+jsxSingleQuote = false
+quoteProps = "as-needed"
+trailingComma = "all"
+bracketSpacing = true
+bracketSameLine = false
+arrowParens = "always"
+# Biome's organizeImports is off and package.json is not formatted
+sortImports = false
+sortPackageJson = false
+ignorePatterns = [
+  "**/bin/",
+  "**/dist/",
+  "**/build/",
+  "**/generated/",
+  "**/.venv/",
+  "**/node_modules/",
+  "**/package.json",
+  # Biome 2.3 only formats JS/TS, JSON, CSS and GraphQL
+  "**/*.yml",
+  "**/*.yaml",
+  "**/*.md",
+  "**/*.mdx",
+  "**/*.html",
+  "**/*.htm",
+  "**/*.vue",
+  "**/*.svelte",
+  "**/*.scss",
+  "**/*.less",
+  "**/*.toml",
+  "**/*.hbs",
+  "**/*.handlebars",
+  "**/*.lock",
+]

@@ -11,12 +11,14 @@
   "exports": {
     "./biome": "./biome.json",
     "./wrangler.json": "./wrangler.json",
-    "./tsconfig": "./tsconfig.json"
+    "./tsconfig": "./tsconfig.json",
+    "./bunfig.toml": "./bunfig.toml"
   },
   "files": [
     "biome.json",
     "wrangler.json",
-    "tsconfig.json"
+    "tsconfig.json",
+    "bunfig.toml"
   ],
   "main": "tsconfig.json"
 }
