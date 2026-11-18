@@ -1,4 +1,4 @@
-# Same file formatting rules as @michijs/shared-configs/biome
+# Company formatting and lint rules (@michijs/shared-configs)
 [fmt]
 printWidth = 80
 tabWidth = 2
@@ -39,3 +39,56 @@ ignorePatterns = [
   "**/*.handlebars",
   "**/*.lock",
 ]
+
+# Same lint rules as the previous Biome config: bun's defaults (ESLint and
+# typescript-eslint recommended) plus the overrides Biome had
+[lint]
+ignorePatterns = [
+  "**/bin/",
+  "**/dist/",
+  "**/build/",
+  "**/generated/",
+  "**/.venv/",
+  "**/node_modules/",
+]
+
+[lint.rules]
+"jsx-a11y/media-has-caption" = "warn"
+"jsx-a11y/anchor-is-valid" = "off"
+"react/button-has-type" = "off"
+"unicorn/no-array-for-each" = "off"
+"@typescript-eslint/no-unsafe-function-type" = "off"
+"@typescript-eslint/no-wrapper-object-types" = "off"
+"@typescript-eslint/no-empty-object-type" = "off"
+"no-sequences" = "off"
+"no-lone-blocks" = "off"
+"no-empty" = "off"
+"array-callback-return" = "off"
+"getter-return" = "off"
+"no-labels" = "off"
+"@typescript-eslint/ban-ts-comment" = "off"
+"no-cond-assign" = "off"
+"no-return-assign" = "off"
+"@typescript-eslint/no-explicit-any" = "off"
+"strict" = "off"
+"eqeqeq" = "off"
+"@typescript-eslint/prefer-function-type" = "off"
+"one-var" = "off"
+"curly" = "off"
+"@typescript-eslint/no-non-null-assertion" = "off"
+"react/jsx-boolean-value" = "off"
+"@typescript-eslint/prefer-as-const" = "error"
+"@typescript-eslint/default-param-last" = "error"
+"@typescript-eslint/prefer-enum-initializers" = "error"
+"react/self-closing-comp" = "error"
+"unicorn/prefer-number-properties" = "error"
+"@typescript-eslint/no-inferrable-types" = "error"
+"no-else-return" = "error"
+"no-param-reassign" = "warn"
+"unicorn/prefer-node-protocol" = "off"
+"no-constructor-return" = "off"
+"no-unused-labels" = "off"
+"no-unreachable" = "off"
+"constructor-super" = "off"
+"no-this-before-super" = "off"
+"@typescript-eslint/no-unused-vars" = "error"
