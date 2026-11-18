@@ -9,7 +9,6 @@
   "type": "module",
   "version": "0.0.37",
   "exports": {
-    "./biome": "./biome.json",
     "./wrangler.json": "./wrangler.json",
     "./tsconfig": "./tsconfig.json",
     "./bunfig.toml": "./bunfig.toml"
